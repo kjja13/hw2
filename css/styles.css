@@ -57,7 +57,7 @@ body {
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
-  color: #404bbf;
+  color: #404bbf; /* Цвет при наведении */
 }
 
 .contacts {
@@ -72,22 +72,21 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: #404bbf; /* Цвет кнопки при наведении */
 }
 
 /* --- СЕКЦИИ --- */
 .hero {
-  background-color: #2e2f42;
+  background-color: #2e2f42; /* Темный фон Hero */
 }
+
 .hero-title {
-  /* Твой текущий шрифт и размер */
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-
-  /* ИСПРАВЛЕНИЕ: Белый цвет текста */
-  color: #ffffff;
+  color: #ffffff; /* ТЕПЕРЬ ОН ТОЧНО БЕЛЫЙ */
 }
 
 .team {
@@ -103,11 +102,12 @@ body {
 }
 
 .footer-text {
-  color: #f4f4fd; /* Цвет текста в футере */
+  color: #f4f4fd; /* Светлый текст в футере */
 }
 
 /* --- ТИПОГРАФИКА (обязательные стили) --- */
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
