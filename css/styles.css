@@ -1,12 +1,12 @@
-/* --- БАЗОВЫЕ СТИЛИ --- */
+/* --- ОСНОВНЫЕ СТИЛИ --- */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Обязательное требование */
 }
 
 .list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,20 @@ body {
   text-decoration: none;
 }
 
-/* --- LOGO (Исправляем цвета по фидбеку) --- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* --- ЛОГОТИП (строго по замечаниям) --- */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -23,29 +36,77 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5; /* Основной синий */
+  color: #2e2f42; /* Цвет Studio в хедере */
 }
 
-/* В хедере Web должен быть синим (#4d5ae5), а Studio темным (#2e2f42) */
-/* Поэтому .logo-accent (Web) делаем синим, а сам .logo (Studio) темным */
-.header .logo {
+.logo-accent {
+  color: #4d5ae5; /* Синий Web */
+}
+
+.logo-footer {
+  color: #f4f4fd; /* Светлый Studio в футере */
+}
+
+/* --- ССЫЛКИ И КНОПКИ (Интерактив) --- */
+.nav-link,
+.contact-link {
   color: #2e2f42;
 }
-.header .logo-accent {
-  color: #4d5ae5;
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
 
-/* В футере Web синий, а Studio белый */
-.footer .logo {
-  color: #f4f4fd;
-}
-.footer .logo-accent {
-  color: #4d5ae5;
+.contacts {
+  font-style: normal; /* Убираем курсив */
 }
 
-/* --- ТИПОГРАФИКА (То, чего не хватало в фидбеке) --- */
+.hero-btn {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  cursor: pointer;
+}
 
-/* Заголовки секций (Our Team, Our Portfolio) */
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* --- СЕКЦИИ --- */
+.hero {
+  background-color: #2e2f42;
+}
+.hero-title {
+  /* Твой текущий шрифт и размер */
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  /* ИСПРАВЛЕНИЕ: Белый цвет текста */
+  color: #ffffff;
+}
+
+.team {
+  background-color: #f4f4fd; /* Фон секции команды */
+}
+
+.team-card {
+  background-color: #ffffff; /* Белый фон карточки */
+}
+
+.footer {
+  background-color: #2e2f42; /* Фон футера */
+}
+
+.footer-text {
+  color: #f4f4fd; /* Цвет текста в футере */
+}
+
+/* --- ТИПОГРАФИКА (обязательные стили) --- */
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -55,37 +116,8 @@ body {
   color: #2e2f42;
 }
 
-/* Features */
-.features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.features-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* Team */
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.team-role {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* Portfolio */
+.features-subtitle,
+.team-name,
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -94,32 +126,10 @@ body {
   color: #2e2f42;
 }
 
+.features-text,
+.team-role,
 .portfolio-type {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-/* --- HERO SECTION --- */
-.hero {
-  background-color: #2e2f42;
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.hero-btn {
-  background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
 }
