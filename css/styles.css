@@ -1,0 +1,102 @@
+/* --- ГЛОБАЛЬНІ СТИЛІ --- */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  margin: 0;
+}
+.hero {
+  background-color: #2e2f42; /* Темно-синий цвет фона из макета */
+  padding: 188px 0; /* Большие отступы сверху и снизу для высоты блока */
+  margin: 0 auto; /* Центрирование самого блока */
+  text-align: center; /* Центрирует текст и кнопку внутри */
+}
+
+/* Заголовок в Hero */
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff; /* Белый цвет текста */
+  max-width: 496px; /* Ограничиваем ширину, чтобы текст разбился на строки */
+  margin: 0 auto 48px auto; /* Центрируем блок заголовка и даем отступ снизу до кнопки */
+}
+
+/* Кнопка */
+.hero-btn {
+  background-color: #4d5ae5; /* Синий цвет кнопки */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  display: block; /* Делаем блочной для центрирования через margin */
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Эффект при наведении на кнопку */
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* КЛЮЧОВИЙ КЛАС: ОБМЕЖУЄ ШИРИНУ (щоб не розповзалось як на вашому скрині) */
+.container {
+  width: 1158px; /* Ширина з макета */
+  margin: 0 auto; /* Центрує весь блок на сторінці */
+  padding: 0 15px;
+}
+
+/* --- TEAM SECTION --- */
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-item {
+  display: flex; /* Фото зліва, текст справа */
+  align-items: center; /* Текст по центру висоти картинки */
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.team-content {
+  flex-grow: 1; /* Текст забирає весь простір праворуч */
+  text-align: center; /* Центрує текст всередині цього простору */
+  padding: 32px 16px;
+}
+
+/* --- PORTFOLIO SECTION --- */
+.portfolio-list {
+  display: flex;
+  flex-direction: column; /* Картки в стовпчик одна під одною */
+  gap: 48px;
+}
+
+.portfolio-item {
+  width: 360px; /* Картка фіксована по ширині фото */
+  text-align: left; /* Підписи під фото зліва */
+}
+
+/* Вирівнювання підписів портфоліо */
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
